@@ -10,7 +10,7 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 2fr 3fr 1fr;
     grid-template-rows: 1fr 4fr 1fr;
     grid-gap: 10px;
 
@@ -20,8 +20,8 @@ body{
 
     grid-template-areas: 
     "header header header"
-    "table portrait minfo"
-    ". spbutton .";
+    "table portrait portrait"
+    ". spbutton spbutton";
 
     height: 100vh;
 }
@@ -55,8 +55,8 @@ body{
 .spbutton {
     grid-area: spbutton;
     display: flex;
-    justify-content: center;
-    gap: 70px;
+    justify-content: space-evenly;
+
 }
 
 .smash-button{
