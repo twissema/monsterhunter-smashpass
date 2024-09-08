@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background: lightslategray;
 }
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -17,10 +23,7 @@ body{
     "table portrait minfo"
     ". spbutton .";
 
-    height: 95vh;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    height: 100vh;
 }
 
 .grid-item {
