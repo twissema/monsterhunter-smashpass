@@ -20,7 +20,7 @@ body{
 
     grid-template-areas: 
     "header header header"
-    "table portrait portrait"
+    "table portrait ."
     ". spbutton spbutton";
 
     height: 100vh;
@@ -44,11 +44,6 @@ body{
 .portrait {
     grid-area: portrait;
     background-color: rgb(0, 2, 128);
-}
-
-.minfo {
-    grid-area: minfo;
-    background-color: rgb(128, 0, 128);
 }
 
 
