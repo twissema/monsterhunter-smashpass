@@ -10,7 +10,7 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 1fr 4fr 1fr;
     grid-gap: 10px;
 
@@ -54,6 +54,55 @@ body{
 
 .spbutton {
     grid-area: spbutton;
-    background-color: rgb(51, 255, 0);
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
+.smash-button{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #1eff00;
+}
+
+.smash-button:active {
+    box-shadow: 0 0 #5eff00;
+    color: #fff;
+    background-color: #1eff00;
+}
+
+.pass-button{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #ff0000;
+}
+
+.pass-button:active {
+    box-shadow: 0 0 #ff0000;
+    color: #fff;
+    background-color: #ff0000;
+}
