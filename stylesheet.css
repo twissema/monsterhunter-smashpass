@@ -24,10 +24,19 @@ body {
     display: grid;
 
     grid-template-columns: 1fr 750px 1fr;
-    background-color: rgba(119, 136, 153, 0.466);
 
     grid-template-areas: 
-    "table picture blanc";
+    "sptable mpicture .";
+}
+
+.sptable{
+    grid-area: sptable;
+    background-color: rgba(119, 136, 153, 0.507);
+}
+
+.mpicture{
+    grid-area: mpicture;
+    background-color: rgba(119, 136, 153, 0.507);
 }
 
 .smash-button {
@@ -83,6 +92,3 @@ body {
     max-height: 600px;
 }
 
-.blanc{
-    background-color: rgba(255, 255, 255, 0);
-}
