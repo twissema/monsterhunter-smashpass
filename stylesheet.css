@@ -4,74 +4,48 @@
     padding: 0;
 }
 
-body{
-    background: url("sys-images/background.webp") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+    background: url("backend-images/background.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}  
+
+.title{
+    font-size: 5rem;
+    color: silver;
+    text-align: center;
+    font-family: 'Monster Hunter';
+    text-transform: uppercase;
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 2fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-gap: 10px;
 
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    grid-template-columns: 1fr 750px 1fr;
+    background-color: rgba(119, 136, 153, 0.466);
 
     grid-template-areas: 
-    "header header header"
-    "table portrait ."
-    ". spbutton spbutton";
-
-    height: 100vh;
+    "table picture blanc";
 }
 
-.grid-item {
-    font-family: system-ui;
-    font-size: 1.5em;
-    background-color: rgba(119, 136, 153, 0.5);
-}
-
-.header {
-    grid-area: header;
-}
-
-.table {
-    grid-area: table;
-}
-
-.portrait {
-    grid-area: portrait;
-}
-
-
-.spbutton {
-    grid-area: spbutton;
+.smash-button {
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.smash-button{
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  text-decoration: none;
-  color: #333333;
-  font-size: 18px;
-  border-radius: 0px;
-  width: 200px;
-  height: 40px;
-  font-weight: bold;
-  border: 2px solid #333333;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
-  background-color: #1eff00;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+    background-color: #1eff00;
 }
 
 .smash-button:active {
@@ -80,22 +54,22 @@ body{
     background-color: #1eff00;
 }
 
-.pass-button{
+.pass-button {
     display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  text-decoration: none;
-  color: #333333;
-  font-size: 18px;
-  border-radius: 0px;
-  width: 200px;
-  height: 40px;
-  font-weight: bold;
-  border: 2px solid #333333;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
-  background-color: #ff0000;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+    background-color: #ff0000;
 }
 
 .pass-button:active {
@@ -104,8 +78,11 @@ body{
     background-color: #ff0000;
 }
 
-.monster-image {
-    max-height: 100%;
+.monster-image{
     max-width: 100%;
-    object-fit: cover;
+    max-height: 600px;
+}
+
+.blanc{
+    background-color: rgba(255, 255, 255, 0);
 }
