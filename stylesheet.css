@@ -38,6 +38,22 @@ body {
     align-content: center;
 }
 
+table.smashpasstable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+table.smashpasstable > tfoot {
+    margin-top: auto;
+}
+
+table.smashpasstable > tfoot > tr{
+    display: flex;
+    justify-content: space-between;
+}
+
 .sptable{
     grid-area: sptable;
     background-color: rgba(119, 136, 153, 0.507);
@@ -55,7 +71,8 @@ body {
     line-height: 1;
     text-decoration: none;
     color: #333333;
-    font-size: 18px;
+    font-size: 26px;
+    font-family: "Monster Hunter";
     border-radius: 0px;
     width: 200px;
     height: 40px;
@@ -79,7 +96,8 @@ body {
     line-height: 1;
     text-decoration: none;
     color: #333333;
-    font-size: 18px;
+    font-size: 26px;
+    font-family: "Monster Hunter";
     border-radius: 0px;
     width: 200px;
     height: 40px;
