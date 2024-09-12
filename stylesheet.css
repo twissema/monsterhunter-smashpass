@@ -46,7 +46,6 @@ body {
 .mpicture{
     grid-area: mpicture;
     width: 100%;
-    /* background-color: rgba(119, 136, 153, 0.507); */
 }
 
 .smash-button {
