@@ -14,10 +14,9 @@ body {
 
 .title{
     font-size: 5rem;
-    color: silver;
-    text-align: center;
+    color: azure;
     font-family: 'Monster Hunter';
-    text-transform: uppercase;
+    text-align: center;
 }
 
 .grid-container{
@@ -38,21 +37,33 @@ body {
     align-content: center;
 }
 
-table.smashpasstable{
-    width: 100%;
+.smashpassbuttoncontainer{
+    align-self: center;
+}
+
+.smashpasslists{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    font-family: "Monster Hunter";
+    font-size: 30px;
+    color: azure;
+    height: 78vh;
+    width: 100%;
+}
+
+.smashpasstable{
+    width: 100%;
+}
+
+.smashpasstable > tbody{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     height: 100%;
 }
 
-table.smashpasstable > tfoot {
-    margin-top: auto;
-}
 
-table.smashpasstable > tfoot > tr{
-    display: flex;
-    justify-content: space-between;
-}
 
 .sptable{
     grid-area: sptable;
@@ -65,9 +76,7 @@ table.smashpasstable > tfoot > tr{
 }
 
 .smash-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     line-height: 1;
     text-decoration: none;
     color: #333333;
@@ -90,9 +99,6 @@ table.smashpasstable > tfoot > tr{
 }
 
 .pass-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     line-height: 1;
     text-decoration: none;
     color: #333333;
