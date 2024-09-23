@@ -22,7 +22,7 @@ body {
 .grid-container{
     display: grid;
 
-    grid-template-columns: 1fr 750px 1fr;
+    grid-template-columns: 30vw 50vw 20vw;
     grid-template-rows: 80vh;
     
 
@@ -47,6 +47,7 @@ body {
     justify-content: space-between;
     font-family: "Monster Hunter";
     font-size: 30px;
+    text-align: center;
     color: azure;
     height: 78vh;
     width: 100%;
